@@ -32,7 +32,7 @@
   },
   "packageManager": "yarn@3.1.1",
   "scripts": {
-    "build": "tsup && yarn build:css",
+    "build": "tsup && pnpm build:css",
     "build:css": "node -r esbuild-register ./scripts/build-css.ts",
     "dev": "tsup --watch",
     "test": "jest --watch",

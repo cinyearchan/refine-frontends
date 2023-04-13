@@ -6,6 +6,8 @@
     "dev": "vue-demi-switch 3 && vite"
   },
   "dependencies": {
+    "@hammerstone/refine-vue": "workspace:^",
+    "refine-core": "workspace:^",
     "vue": "^3.0.0"
   },
   "devDependencies": {

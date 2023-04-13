@@ -5,13 +5,13 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:react": "concurrently \"yarn workspace refine-core dev\" \"yarn workspace @hammerstone/refine-react dev\" \"yarn workspace react dev\"",
-    "dev:vue2": "concurrently \"yarn workspace refine-core dev\" \"yarn workspace @hammerstone/refine-vue build:vue2 --watch\" \"yarn workspace vue2 dev --watch\" ",
-    "dev:vue3": "concurrently \"yarn workspace refine-core dev\" \"yarn workspace @hammerstone/refine-vue build:vue3 --watch\" \"yarn workspace vue3 dev\" ",
-    "release:vue-dev": "yarn workspace refine-core build && yarn workspace @hammerstone/refine-vue release:dev",
-    "release:vue-prod": "yarn workspace refine-core build && yarn workspace @hammerstone/refine-vue release:prod",
-    "release:react-dev": "yarn workspace refine-core build && yarn workspace @hammerstone/refine-react release:dev",
-    "release:react-prod": "yarn workspace refine-core build && yarn workspace @hammerstone/refine-react release:prod"
+    "dev:react": "concurrently \"pnpm --filter refine-core dev\" \"pnpm --filter @hammerstone/refine-react dev\"  \"pnpm --filter react dev\"",
+    "dev:vue2": "concurrently \"pnpm --filter refine-core dev\" \"pnpm --filter @hammerstone/refine-vue build:vue2 --watch\" \"pnpm --filter vue2 dev --watch\" ",
+    "dev:vue3": "concurrently \"pnpm --filter refine-core dev\" \"pnpm --filter @hammerstone/refine-vue build:vue3 --watch\" \"pnpm --filter vue3 dev\" ",
+    "release:vue-dev": "pnpm --filter refine-core build && pnpm --filter @hammerstone/refine-vue release:dev",
+    "release:vue-prod": "pnpm --filter refine-core build && pnpm --filter @hammerstone/refine-vue release:prod",
+    "release:react-dev": "pnpm --filter refine-core build && pnpm --filter @hammerstone/refine-react release:dev",
+    "release:react-prod": "pnpm --filter refine-core build && pnpm --filter @hammerstone/refine-react release:prod"
   },
   "prettier": {
     "printWidth": 100,
